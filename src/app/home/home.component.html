@@ -1,0 +1,48 @@
+<div class="container">
+  <h1 class="text-center">Find a book! 🪶</h1>
+  <h2>
+    Search by genre a list of books or a specific one, this app is based on Open
+    Library and all the subjects are available here:
+  </h2>
+  <h4>
+    <a class="link" href="https://openlibrary.org/subjects">Open Library</a>
+  </h4>
+  <div class="input-group">
+    <input
+      type="text"
+      [(ngModel)]="genre"
+      class="form-control"
+      placeholder="search for a genre..."
+      (input)="onInputChange($event)"
+    />
+    <button type="button" class="btn btn-success" (click)="searchBooks()">
+      Find genre
+    </button>
+  </div>
+
+  <div class="card" style="width: 100%">
+    <ul class="list-group list-group-flush" *ngFor="let book of books">
+      <li class="list-group-item">
+        {{ book.title | uppercase }} - By
+        <span class="author">{{ book.authors }} </span>
+        <br />
+        <button
+          type="button"
+          class="btn btn-outline-success"
+          (click)="getBookDescriptionAndToggleCollapse(book)"
+          [attr.aria-expanded]="book.isCollapsed"
+        >
+          description
+        </button>
+
+        <div #collapse="ngbCollapse" [(ngbCollapse)]="!book.isCollapsed">
+          <div class="card">
+            <div class="card-body">
+              {{ book.description }}
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
