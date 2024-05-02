@@ -1,6 +1,10 @@
-# Eduction
+
+# Education
+![image](https://github.com/DavideSiracusano/educationproject/assets/152174921/fd7ca382-9e00-4967-9cb2-9561b712c7e9)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+
+The home page contains an input button where users can search for various genres based on the API https://openlibrary.org/developers/api
 
 ## Development server
 
