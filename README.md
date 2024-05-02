@@ -4,7 +4,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
-The home page contains an input button where users can search for various genres based on the API https://openlibrary.org/developers/api
+The home page contains an input button where users can search for various genres based on the API https://openlibrary.org/developers/api.
+Users can click on the description to see what the book is about.
+
+#Firebase link
+
+link to the project: https://education-7a61b.web.app/
+
+#Test coverage 
+
+![Screenshot 2024-05-02 101628](https://github.com/DavideSiracusano/educationproject/assets/152174921/7a66b2db-cbda-4d9c-ad27-58defd4f2fdf)
+
+#S2I
+
+this is the second project of the s2i university regarding front end
 
 ## Development server
 
